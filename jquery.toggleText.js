@@ -12,13 +12,10 @@
 jQuery.fn.extend({
   toggleText: function (a, b) {
     return this.html(
-		this.html().replace(
-			new RegExp("("+a+"|"+b+")"),
-				function(x) {
-					return (x == a) ? b : a;
-				}
-			)
-		);
-  	}
+    this.html().replace(
+    new RegExp("(" + a + "|" + b + ")"), function (x) {
+      return (x == a) ? b : a;
+    }));
+  }
 });
 
